@@ -151,7 +151,7 @@ See `flycheck-define-checker' for the three arguments OUTPUT, CHECKER, and BUFFE
   "A Javascript/TypeScript syntax and style checker using eslint.
 
 See URL `https://biomejs.dev'."
-  :command ("biome" "lint" "--reporter=json" source)
+  :command ("npx" "biome" "lint" "--reporter=json" source)
   :enabled flycheck-biomejs/enabled
   :error-parser flycheck-biomejs/parse-error
   :working-directory flycheck-biomejs/find-working-directory
